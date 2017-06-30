@@ -1,0 +1,12 @@
+<h1>Artists</h1>
+<div class="btn btn-large" ui-sref="newArtist">+ New Artist</div>
+<div class="artist-container flex">
+    <div class="artist flex" ng-repeat="artist in $ctrl.artists" ui-sref="artist({id: artist.id})">
+        <img ng-src={{artist.photo_url}}></img>
+        <div class="info">
+            <h4>{{artist.name}}</h4>
+            <div>{{artist. nationality}}</div>
+            
+        </div>
+    </div>
+</div>
